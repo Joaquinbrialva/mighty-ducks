@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/LogoMightyducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@100&family=Cormorant+SC:wght@500&family=Dosis:wght@200&family=Quicksand:wght@300&family=Roboto+Condensed&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="logo1" src="./assets/img/LogoMightyducks-01.png" alt="MDHL Logo"></a>
+        <h1>MIGHTY DUCKS HOCKEY LEAGUE</h1>
+        <img class="logo2" src="./assets/img/logo_large-removebg-preview.png" alt="MDHL Logo">
+    </header>
+    <nav>
+        <div class="nav-menu-container">
+            <div class="nav-menu">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./game_info.html">Game Information</a>
+                <a href="./rules.html">Rules & Policies</a>
+                <a id="active" href="./registration.html">Registration</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="subtittle-container">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="form_page-container">
+            <form class="form-container" action="./show_data.html">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <div class="personal_data">
+                        <div id="name_surname_section">
+                            <label for="first_name">Player's First Name:</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
+                        <div id="street_adress">
+                            <label for="street_address">Street Address:</label>
+                            <input type="text" name="street_address" id="street_address" required>
+                        </div>
+                        <div id="city_section">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city" required>
+                            <div id="zip">
+                                <label for="zip_code">Zip Code:</label>
+                                <input type="text" name="zip_code" id="zip_code" required>
+                            </div>
+                        </div>
+                        <div id="birth_section">
+                            <label for="birth_date">Birth Date (mm/dd/yyyy):</label>
+                            <input type="date" name="birth_date" id="birth_date" min="1920-01-01" required>
+                        </div>
+                        <div id="gender_section">
+                            <p>Gender:</p>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div id="parent_guardian_section">
+                            <label for="parent_guardian">Parent/Guardian:</label>
+                            <input type="text" name="parent_or_guardian" id="parent_guardian" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <div>
+                        <label for="grade">Grade:</label>
+                        <select name="grade" id="grade">
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                            <option value="5">5th</option>
+                            <option value="6">6th</option>
+                            <option value="7">7th</option>
+                            <option value="8">8th</option>
+                        </select>
+                        <label for="pre_school">Pre School:</label>
+                        <select name="preSchool" id="pre_school">
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                            <option value="5">5th</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Wich elementary school do you live near?</legend>
+                    <div>
+                        <label for="closest_school"></label>
+                        <select name="closest_school" id="closest_school">
+                            <option value="aj_katzenmaier">AJ Katzenmaier</option>
+                            <option value="greenbay">Greenbay</option>
+                            <option value="howard_a_yeager">Howard A Yeager</option>
+                            <option value="marjorie_p_hart">Marjorie P Hart</option>
+                            <option value="north_elementary">North Elementary</option>
+                            <option value="south_elementary">Shouth Elementary</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What position(s) do you normally play? (Check all thath apply)</legend>
+                    <div>
+                        <label for="forward">Forward</label>
+                        <input type="checkbox" name="position" id="forward" value="forward">
+                        <label for="defense">Defense</label>
+                        <input type="checkbox" name="position" id="defense" value="defense">
+                        <label for="midfield">Midfield</label>
+                        <input type="checkbox" name="position" id="midfield" value="midfield">
+                        <label for="goalkeeper">Goalkeeper</label>
+                        <input type="checkbox" name="position" id="goalkeeper" value="goalkeeper">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Uniform Size:</legend>
+                    <div>
+                        <select name="uniform_size" id="uniform_size">
+                            <option value="youth_small">Youth Small</option>
+                            <option value="youth_medium">Youth Medium</option>
+                            <option value="youth_large">Youth Large</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extra_large">Extra Large</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Permission to play</legend>
+                    <div>
+                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide
+                            by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
+                            physical injury associated with hockey and in consideration for the "League" accepting the
+                            registrant for it's hockey programs and activities, I hereby release, discharge, and/or
+                            otherwise indemnify MDHL, their employees and associated personnel and volunteers, including
+                            the facilities used for registrant's participation in the program and/or being transported
+                            to or from MDHL sponsored activities, which transportation.</p>
+                        <p>By entering your name below, I hereby agree and authorize the above. In addition, by signing
+                            below, I also acknowlegde that I have read the cancellation policy and agree to it's terms.
+                        </p>
+                        <label for="sign">Parent/Guardian Signature:</label>
+                        <input type="text" name="sign_area" id="sign" required>
+                        <label for="sign_date">Date:</label>
+                        <input type="date" name="sign_date" id="sign_date" required>
+                    </div>
+                </fieldset>
+                <div class="submit_button">
+                    <input id="registerButton_style" type="submit" value="Register">
+                </div>
+            </form>
+            <div class="form_images_container">
+                <div class="zoom-mask">
+                    <img class="form_image" src="./assets/img/DSC00041-1.jpg" alt="">
+                </div>
+                <div class="zoom-mask">
+                    <img class="form_image" src="./assets/img/7d709ce2-fc33-47f9-a491-8de0cc8e66d6-USA151658.jpg"
+                        alt="">
+                </div>
+                <div class="zoom-mask">
+                    <img class="form_image"
+                        src="./assets/img/181-WK2-DIV1-Muskoka-Summer-Hockey-School-Copyright-Helen-E-Grose-2018-home-page-7.jpg"
+                        alt="">
+                </div>
+                <div class="zoom-mask">
+                    <img class="form_image" src="./assets/img/sneakpeek_lucius.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-networks-container">
+            <div class="social-networks">
+                <a href=""><img id="facebook" src="./assets/img/facebook-logo-48.png" alt="Facebook"></a>
+                <a href=""><img id="instagram" src="./assets/img/instagram-logo-48.png" alt="Instagram"></a>
+                <a href=""><img id="twitter" src="./assets/img/twitter-logo-48.png" alt="Twitter"></a>
+                <a href=""><img id="whatsapp" src="./assets/img/whatsapp-logo-48.png" alt="Whats App"></a>
+            </div>
+            <div class="copyright">
+                <div>
+                    <p>© 2022 Copyright: <strong>Joaquin Alvarez</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

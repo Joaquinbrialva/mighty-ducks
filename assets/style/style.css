@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/muro-hormigon-gris_53876-89246.jpg);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* zoom_mask */
+.zoom-mask {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.74);
+}
+
+.zoom-mask img {
+        transition: .3s;
+    }
+
+.zoom-mask img:hover {
+    transition: 00.3s;
+    transform: scale(1.05);
+}
+/* zoom_mask */
+
+/* header box start */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../img/screen-0.jpg);
+    background-position: 30% 80%;
+    height: 20vh;
+}
+
+h1 {
+    visibility: hidden;
+}
+
+.logo1 {
+    margin-left: 50px;
+    width: 130px;
+    height: 130px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+}
+
+.logo2 {
+    margin-right: 50px;
+    width: 230px;
+}
+
+/* header box ended */
+
+/* nav box start */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffd230;
+    height: 5vh;
+}
+
+.nav-menu-container {
+    display: flex;
+    height: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #121212;
+    height: 100%;
+    padding: 5px;
+    transition: .3s;
+}
+
+
+.nav-menu a:hover {
+    box-shadow: inset 0 -5px 0 #121212;
+}
+
+
+#active {
+    background-color: black;
+    color: white;
+}
+
+/* nav box ended */
+
+/* main box start */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+}
+
+#separation-line {
+    background: rgb(42,120,112);
+    background: linear-gradient(0deg, rgba(42,120,112,0) 0%, rgba(42,120,112,0.6446953781512605) 25%, rgba(42,120,112,1) 75%, rgba(42,120,112,0) 100%);
+    height: 300px;
+    width: 2px;
+}
+
+.subtittle-container {
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 3px;
+    text-align: center;
+    width: 100%;
+    background: rgb(31,52,50);
+    background: linear-gradient(90deg, rgba(31,52,50,1) 10%, rgba(50,164,152,1) 50%, rgba(31,52,50,1) 90%);
+}
+
+/* main box ended */
+
+/* home box start */
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.events-icon {
+    width: 150px;
+    height: 140px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 500px;
+    justify-content: space-around;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+.events p {
+    text-indent: 3%;
+}
+
+.hockey-img-1 {
+    width: 420px;
+    height: 320px;
+}
+
+/* home box ended */
+
+/* about box start */
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+.about p {
+    text-indent: 3%;
+}
+
+.hockey-img-2 {
+    width: 400px;
+    height: 300px;
+}
+
+/* about box ended */
+
+/* contact box start */
+
+.contact-container {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-div-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+.contact-div-container a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.hockey-img-3 {
+    width: 400px;
+    height: 300px;
+}
+
+/* contact box ended */
+
+/* schedule box start */
+
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.schedule-icon {
+    width: 120px;
+    height: 120px;
+}
+
+table {
+    text-align: center;
+    width: 500px;
+    height: 436px;
+    border-radius: 15px;
+}
+
+caption {
+    border-radius: 7px;
+}
+
+table,caption {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+    padding: 8px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+table > caption {
+    margin-bottom: 25px;
+    padding: 8px;
+}
+
+.hockey-img-4 {
+    width: 460px;
+    height: 350px;
+}
+
+.game_and_contact-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.maps_main_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+.maps_container {
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+/* schedule box ended */
+
+/* policy box start */
+
+.policy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.div-inflex {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+
+.first_paragraph, .second_paragraph, .third_paragraph {
+    margin-bottom: 10px;
+}
+
+.first_paragraph p {
+    text-indent: 3%;
+}
+
+.second_paragraph {
+    margin-bottom: 20px;
+}
+
+.third_paragraph p {
+    text-indent: 3%;
+}
+
+.third_paragraph li {
+    list-style: circle;
+}
+
+.hockey-img-5 {
+    width: 400px;
+    height: 270px;
+}
+
+/* policy box ended */
+
+/* form box start */
+
+.form_page-container {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.829);
+}
+
+fieldset {
+    margin: 3px;
+    padding: 8px;
+}
+
+#name_surname_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#street_adress {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#city_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#zip_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#birth_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#gender_section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#parent_guardian_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.submit_button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4px;
+}
+
+.form_images_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 55%;
+}
+
+.form_image {
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+#registerButton_style {
+    width: 100px;
+    height: 40px;
+}
+
+/* footer box start */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #c79d05;
+}
+
+.social-networks-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+  }
+  
+.social-networks {
+    display: flex;
+    width: 10%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.copyright {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f730e;
+}
+  
+.social-networks img {
+    width: 38px;
+    height: 38px;
+}
+/* footer box ended */
